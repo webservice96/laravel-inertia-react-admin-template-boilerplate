@@ -2,8 +2,8 @@
 
 Welcome to the Laravel Inertia ReactJS Admin Panel Boilerplate! This project is designed to give developers a quick start on building dynamic admin panels using a robust stack of Laravel, InertiaJS, and React.
 
-![Admin Dashboard Preview](/public/template-previews/admin-light.png)
-![Admin Dashboard Preview](/public/template-previews/admin-dark.png)
+![Admin Dashboard Preview](/public/template-previews/admin-light.png "Light mode")
+![Admin Dashboard Preview](/public/template-previews/admin-dark.png "Dark mode")
 
 ## Features
 
