@@ -6,7 +6,7 @@ function MediaPage() {
         <AppLayout pageTitle={"Media Files"}>
             <iframe
                 src="/laravel-filemanager?type=image"
-                className="h-[calc(100vh-101px)] w-full overflow-hidden"
+                className="h-[calc(100vh-101px)] w-full overflow-hidden border"
             ></iframe>
         </AppLayout>
     );

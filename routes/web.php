@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FileManagerController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -17,35 +18,12 @@ Route::middleware([
         return Inertia::render('Default/Page');
     })->name('dashboard');
 
-    Route::get('/media', function () {
-        return Inertia::render('Media/Page');
-    })->name('mediafiles');
+    Route::get('/media', [FileManagerController::class, 'index'])->name('mediafiles');
 
 
     Route::get('/upload-demo', function () {
-        return Inertia::render('UploadDemo');
+        return inertia('UploadDemo');
     })->name('upload.demo');
-
-    Route::get('/tasks', function () {
-        return inertia('Tasks');
-    })->name('glopsy.tasks');
-
-    Route::get('/about', function () {
-        return inertia('About');
-    })->name('glopsy.about');
-
-
-    Route::get('/posts', function () {
-        return inertia('Test/Post');
-    })->name('post.list');
-
-    Route::get('/post-add-new', function () {
-        return inertia('Test/AddNew');
-    })->name('post.addnew');
-
-    Route::get('/post-category', function () {
-        return inertia('Test/Category');
-    })->name('post.category');
 });
 
 
